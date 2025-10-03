@@ -16,7 +16,14 @@ alert("Welcome To My Website")
 	<h2>Welcome to my homepage!</h2>
 <p>Here is where I'll make my online portfolio! My name is Alice Cheng and I'm a sophmore at Arlington Tech. </p>
 <p><q>Everyone has their own pace, your pace is special in itself as well, so don't care about others too much.</q> - Stray Kids</p>
-<img src="../images/mountain.JPG" alt="mountain" width="300"  height="400">
+<img src="images/mountain.JPG"
+     srcset="images/mountain-small.JPG 480w,
+     images/mountain-medium.JPG 800w,
+	 images/mountain-large.JPG 1200w"
+	  sizes="(max-width: 480px) 75vw,
+		 (max-width: 800px) 45vw,
+		 30vw">
+<!--Photo taken by me -->
 <h3>Some of my interests/hobbies are:</h3>
 <ul>
 	<li>Baking</li>
@@ -29,5 +36,5 @@ alert("Welcome To My Website")
 <a href="https://alice-c44.github.io/practice/terminal.html" target="_blank">Vim Instructions</a>
 <a href="https://alice-c44.github.io/practice/schedule.html" target="_blank">Class Schedule</a>
 <a href="https://alice-c44.github.io/projects/recipes/index.html" target="_blank">Recipe Book</a>
-</body>
+	</body>
 </html>
