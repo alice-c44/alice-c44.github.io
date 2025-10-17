@@ -5,9 +5,9 @@ This model has four total layers.
 ## Application
 
 Protocols:
-For phone calls it uses VOIP (voice over IP)
-For text messages it uses SMS
-For websites it uses WWW 
+- For phone calls it uses VOIP (voice over IP)
+- For text messages it uses SMS
+- For websites it uses WWW 
 
 
 ## Transport
