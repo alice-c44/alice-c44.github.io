@@ -4,6 +4,8 @@ Pixalated image of Usagi
 
 ## Image
 
+![Pixel Usagi](../images/pixel-usagi)
+
 ## Code 
 
 0A
