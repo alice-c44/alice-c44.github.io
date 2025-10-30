@@ -4,7 +4,7 @@ Pixalated image of Usagi
 
 ## Image
 
-![Pixel Usagi](../images/pixel-usagi)
+![Pixel Usagi](../images/pixel-usagi.png)
 
 ## Code 
 
