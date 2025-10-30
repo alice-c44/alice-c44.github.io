@@ -6,6 +6,8 @@ Pixalated image of Usagi
 
 ![Pixel Usagi](../images/pixel-usagi.png)
 
+![Usagi Sketch](../images/usagi-drawing.jpg)
+
 ## Code 
 
 ### Hexadecimal
