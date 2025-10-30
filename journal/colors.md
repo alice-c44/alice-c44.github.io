@@ -6,7 +6,7 @@ Pixalated image of Usagi
 
 ![Pixel Usagi](../images/pixel-usagi.png)
 
-![Usagi Sketch](../images/usagi-drawing.JPEG)
+A![Usagi Sketch](../images/Usagi-drawing.jpg)
 
 ## Code 
 
