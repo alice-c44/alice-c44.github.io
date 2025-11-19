@@ -1,0 +1,7 @@
+table, tr , th, td{
+	border: 3px solid pink;
+	border-collapse: collapse;
+}
+body{
+	background-color: LemonChiffon;
+}
