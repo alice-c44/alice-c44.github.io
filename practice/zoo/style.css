@@ -4,9 +4,17 @@ table, tr , th, td{
 }
 body{
 	background-color: LemonChiffon;
+	font-family:"Palatino", "Georgia", serif;
 }
 h1{
 	background-color: Pink;
+border: 3px solid black;
+padding:30px;
+border-left: 5px dashed black;
+margin: 20px;
+margin-left:100px;
+text-align: center;
+
 }
 #header{
 	background-color: Pink;
