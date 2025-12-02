@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ice Cream</title>
+		<script src="../js/validate.js"></script>
+<style>
+body{
+	background-color:Lavender;
+}
+form{
+	background-color:white;
+	padding:30px;
+	margin:20px;
+	margin-left:100px;
+	text-align:center;
+	border-radius:10px;
+}
+</style>
+	</head>
+<body>
+	<form action="https://httpbin.org/post" method="post">
+		<center>	What is your email address?
+		<input type="text" name="youremail">
+		<br>
+		What is your phone number?
+		<input type="text" name="yournumber">
+		<br>
+		What is your name?
+		<input type="text" name="yourname">
+		<br>
+		How many guests are you bringing?
+		<input type="text" name="peoplenumber">
+		<br>
+		What is your favorite ice cream flavor?
+		<br>
+		<input type="radio" id="Vanilla" name="Vanilla"> Vanilla
+		<br>
+		<input type="radio" id="Chocolate Chip" name="Chocolate Chip"> Chocolate Chip
+		<br>
+		<input type="radio" id="Strawberry" name="Strawberry"> Strawberry
+		<br>
+		<input type="radio" id="Other" name="Other"> Other
+		<br>
+		Which toppings do you like?
+		<br>
+		<input type="checkbox" name="Sprinkles">Sprinkles
+		<br>
+		<input type="checkbox" name="Chocolate Chips">Chocolate Chips
+		<br>
+		<input type="checkbox" name="Gummy Bears">Gummy Bears
+		<br>
+		<input type="checkbox" name="Other">Other
+		<br>
+		What kind of entertainment should we have at the party?
+		<select>
+			<option value="Balloon Animals">Balloon Animals</option>
+			<option value="Bouncehouse">Bounce House</option>
+			<option value="Cornhole">Cornhold</option>
+			<option value="DJ">DJ</option>
+			<option value="Facepainting">Face Painting</option>
+			<option value="Magician">Magician</option>
+		</select>
+		<br>
+		Do you have any other suggestions or comments?
+		<input tyoe="text" name="suggestions/comments">
+		<br>
+		</center>
+
+		<button style="background-color:RebeccaPurple;" type="submit">Submit</button>
+	</form>
+</body>
+
+</html>
