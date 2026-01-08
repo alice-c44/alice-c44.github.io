@@ -12,9 +12,9 @@ border-style:solid;
 	grid:
 	'head     head     head' 1fr
 	'side2    main     main' 4fr
-	'panel1   card    panel' 3fr
+	'cube   card    panel' 3fr
 	'foot     foot     foot' 2fr
-	/200px    1fr     200px;
+	/290px   1fr     430px;
 }
 #main{
 	grid-area:main;
@@ -39,6 +39,7 @@ background-color:LightPink;
 color:white;
 font-size:30px;
 text-align:center; 
+border-top:white solid 5px;
 }
 #side2{
 	grid-area:side2;
@@ -55,7 +56,7 @@ border-color:white;
 #panel{
 grid-area:panel;
 background-color:LightPink;
-border-bottom: solid 5px white;
+border-left: solid 5px white;
 color:white;
 font-size:30px;
 text-align:center;
@@ -63,10 +64,17 @@ text-align:center;
 #cube{
 grid-area:cube;
 background-color:LightPink;
+font-size:30px;
+text-align:center;
+color:white;
+border-right:white solid 5px;
 }
 #card{
 grid-area:card;
 background-color:LightPink;
+font-size:30px;
+text-align:center;
+color:white;
 }
 </style>
 	</head>
