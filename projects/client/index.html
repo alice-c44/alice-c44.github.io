@@ -10,7 +10,7 @@
 display:grid;
 grid:
 	'logo blank home calendar competition supportus' 40px
-/100px 80px 100px 100px 100px 100px;
+/100px 300px 100px 100px 100px 100px;
 grid-area:head;
 }
 #logo img{
@@ -19,34 +19,48 @@ grid-area:head;
 width:110px;
 height:40px;
 }
-#home{
-	grid-area:home;
+#home img{
+	grid-area:head;
+	object-fit:cover;
+height:40px;
 
 }
-#calendar{
-	grid-area:calendar;
+#calendar img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
 }
-#competition{
-	grid-area:competition;
+#competition img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
 }
-#supportus{
-	grid-area:supportus;
-}.grid{
+#supportus img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
+	align:right;
+}
+.grid{
 	display:grid;
 	grid:
 		'head' 50px
          	'main' 500px
         	'vision' 500px
         	'mission' 500px
-	        'foot'100px
+	        'foot'300px
          	/1400px;
+	gap:0;
 }
 #head{
 grid-area:head;
 background-color:
 }
-#main{
+#main img{
 	grid-area:main;
+	display:block;
+	width:100vw;
+	height:500px;
 }
 #vision img{
 grid-area:vision;
@@ -60,53 +74,27 @@ height:500px;
 	width:100vw;
 	height:500px;
 }
-#foot{
+#foot img{
 	grid-area:foot;
 	display:block;
 	width:100vw;
-	height:100px;
-}
-.footergrid{
-	display:grid;
-	grid:
-		'email address' 50px
-        	'instagram donate' 50px
-/300px 300px;
-grid-area:foot;
-}
-#email{
-	grid-area:email;
-}
-#address{
-	grid-area:address;
-}
-#instagram{
-	grid-area:instagram;
-}
-#donate{
-	grid-area:donate;
+	height:300px;
 }
 </style>
 	<body>
 		<div class="grid">
 			<div id="head"></div>
-			<div id="main">Main</div>
+			<div id="main"><img src="media/main.png" alt="Team photo"></div>
 			<div id="vision"><img src="media/vision.png" alt="vision statement"></div>
 			<div id="mission"><img src="media/mission.png" alt="mission statement"></div>
 			<div id="foot"><img src="media/footer.png" alt="Email, address and social media accounts"></div>
 			<div class="headergrid">
 				<div id="logo"><img src="media/koibotslogo.png" alt="KoiBots logo and name"></div>
 				<div id="blank"></div>
-				<div id="home">Home</div>
-				<div id="calendar">Calendar</div>
-				<div id="competition">Competitions</div>
-				<div id="supportus">Support Us</div>
-			</div>
-			<div class="footergrid">
-				<div id="email"></div>
-				<div id="address"></div>
-				<div id="instagram"></div>
-				<div id="donate"></div>
+				<div id="home"><img src="media/homebutton.png" alt="Home Button"></div>
+				<div id="calendar"><img src="media/calendar.png" alt="Calendar Page"></div>
+				<div id="competition"><img src="media/comp.png" alt="Competitions Page"></div>
+				<div id="supportus"><img src="media/support.png" alt="Donation+fundraiser page"></div>
 			</div>
 		</div>
 	</body>
