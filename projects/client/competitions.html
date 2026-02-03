@@ -3,7 +3,50 @@
 	<head>
 		<title>Competitions</title>
 		<link rel="stylesheet" href="style.css">
+<style> .headergrid{
+		display:grid;
+		grid:
+	'logo blank home calendar competition supportus' 40px
+/100px 300px 100px 100px 100px 100px;
+grid-area:head;
+}
+#logo img{
+	grid-area:head;
+	object-fit:cover;
+width:110px;
+height:40px;
+}
+#home img{
+	grid-area:head;
+	object-fit:cover;
+height:40px;
+
+}
+#calendar img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
+}
+#competition img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
+}
+#supportus img{
+	grid-area:head;
+	object-fit:cover;
+	height:40px;
+	align:right;
+}
+</style>
 	</head>
 	<body>
-		</body>
+	<div class="headergrid">
+				<div id="logo"><a href="index.html"><img src="media/koibotslogo.png" alt="KoiBots logo and name"></a></div>
+				<div id="blank"></div>
+				<div id="home"><a href="index.html"><img src="media/homebutton.png" alt="Home Button"></a></div>
+				<div id="calendar"><a href="calendar.html"><img src="media/calendar.png" alt="Calendar Page"></a></div>
+				<div id="competition"><a href="competitions.html"><img src="media/comp.png" alt="Competitions Page"></a></div>
+				<div id="supportus"><a href="support.html"><img src="media/support.png" alt="Donation+fundraiser page"></a></div>	</div>
+	</body>
 </html>
