@@ -1,37 +1,37 @@
-# Chris Needs Coffee
+# Life Of A Hamster
 
 ## Setting
 
-This game takes place at the Arlington Career Center. I tried to f
-faithfully recreate it, with the exception of moving the 
-library to the first floor.
+This game is loosely based off of my hamster and her possible life if she had different owners.
 
 ## Map
 
 ```mermaid
 graph TD;
-    bus(((Bus)))-->Commons;
-    Library-->Commons;
-    Box-->Cafeteria;
-    Cafeteria-->Commons;
-    Commons-->Outside;
-    Outside-->Portable;
-    Portable-->rm511;
-    Portable-->Bathroom;
+    breeder(((breeder)))-->petstore;
+    petstore-->House1;
+    House1-->Backyard;
+    petstore-->House2;
+    House2-->LivingRoom;
+    petstore-->House3;
+    House3-->Kitchen;
+    House3-->Bedroom;
+    House3-->Bathroom;
+    Kitchen-->Bathroom;
 ```
 
-The player starts on the bus, and then is directed into the Commons. T
-They can explore, but must eventually make their way to rm511.
+The player starts by being born as a hamster to a reputable breeder. They are moved to a pet store, where they're life officially starts. 
+They can pick one of the 3 houses to live in, if player chooses to remain in pet store they die.
 
 ## Story
 
-When the user gets to rm511, they learn that the teacher is asleep.
-They must take the teacher's coffee mug to the library, get it 
-filled, and then bring it back to the teacher.
+The player has the choice to either wake up and be seen by one of the 3 owners or can remain asleep, leaving the person to pick a different hamster.
 
-The game starts 15 minutes before the morning class bell, and each
-move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
+In the first house you will be given the choice to escape or remain in your cage. Then you can choose whether or not to go ouside. If you remain inside you will be found and put back in your cage. You will get the same option again. If you stay in your cage you live out your life and die a natural death. If you go outside you either dig a tunnel or run across the field. If you dig a tunnel you are now free. If you run in the open a hawk swoops down and eats you.
+
+In the second house you can either escape or remain. Once you escape you enter the living room, where your owner keeps their dog. Your choice is to go back under the door where you're safe from the dog or go into the living room. If you go back your owner puts you back and you live there happily safe from the dog. If you go into the living room, you must hide from the dog. If you hide under the couch you can eventually escape once the dog falls asleep.If you run the dog catches and eats you.
+
+In the third home you either escape or remain. Once you escape you can either go to the bedroom, kitchen or bathroom. If you go to the bedroom you are caught and returned to your cage. If you go to the kitchen there are food scraps you can eat. You can either hide under the fridge or under the oven. The oven turns on and you get cooked. The fridge is safe and you avoid being found and survive off of the leftovers. If you go to the bathroom, you can either hide under the cabinent or in the trash can. If you hide under the cabinent you are never found and freeze to death. If you hide in the trashcan theyour owners find you in the morning and you are saved from the cold and go back home. The kitchen has the option to go to the bathroom.
 
 ## Global Variables
 
