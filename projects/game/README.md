@@ -2,22 +2,24 @@
 
 ## Setting
 
-This game is loosely based off of my hamster and her possible life if she had different owners.
-
+This game is about your life as a hamster and your journey to freedom. 
+There are three houses each with their own obstacles, you must avoid to escape into the wild.
 ## Map
 
 ```mermaid
 graph TD;
-    breeder(((breeder)))-->petstore;
+    Start(((Start)))-->petstore;
     petstore-->House1;
     House1-->Backyard;
     petstore-->House2;
     House2-->LivingRoom;
+    LivingRoom-->Floorboards
     petstore-->House3;
     House3-->Kitchen;
     House3-->Bedroom;
     House3-->Bathroom;
     Kitchen-->Bathroom;
+    Kitchen-->Drawer
 ```
 
 The player starts by being born as a hamster to a reputable breeder. They are moved to a pet store, where they're life officially starts. 
@@ -31,7 +33,7 @@ In the first house you will be given the choice to escape or remain in your cage
 
 In the second house you can either escape or remain. Once you escape you enter the living room, where your owner keeps their dog. Your choice is to go back under the door where you're safe from the dog or go into the living room. If you go back your owner puts you back and you live there happily safe from the dog. If you go into the living room, you must hide from the dog. If you hide under the couch you can eventually escape once the dog falls asleep.If you run the dog catches and eats you.
 
-In the third home you either escape or remain. Once you escape you can either go to the bedroom, kitchen or bathroom. If you go to the bedroom you are caught and returned to your cage. If you go to the kitchen there are food scraps you can eat. You can either hide under the fridge or under the oven. The oven turns on and you get cooked. The fridge is safe and you avoid being found and survive off of the leftovers. If you go to the bathroom, you can either hide under the cabinent or in the trash can. If you hide under the cabinent you are never found and freeze to death. If you hide in the trashcan theyour owners find you in the morning and you are saved from the cold and go back home. The kitchen has the option to go to the bathroom.
+In the third home you either escape or remain. Once you escape you can either go to the bedroom, kitchen or bathroom. If you go to the bedroom you are caught and returned to your cage. If you go to the kitchen there are food scraps you can eat. You can either hide under the fridge or under the oven. The oven turns on and you get cooked. The fridge is safe and you avoid being found and survive off of the leftovers. If you go to the bathroom, you can either hide under the cabinent or in the trash can. If you hide under the cabinent you are never found and are free. If you hide in the trashcan theyour owners find you in the morning and you are saved from the cold and go back home. The kitchen has the option to go to the bathroom.
 
 ## Global Variables
 
