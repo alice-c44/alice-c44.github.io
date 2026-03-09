@@ -8,35 +8,36 @@ let gameActive = true; //this variable is required.
 
 
 //Make one function for each location
-function locationA() {
+function Start() {
     clear();
-    print("\nYou are in location A!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationB");
+    print("\nYou're life as a hamster has begun. You will be transferred to a petstore, where you must navigate obstacles and escape to find freedom or stay.");
+    print("\nType start to begin" +
+        "\n\tType start");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationb") {
-            locationB();
+        if (input.toLowerCase() === "petstore") {
+            petstore();
         } else {
             stayHere();
-            waitThenCall(locationA);
+            waitThenCall(Start);
         }
     }
     waitForInput(processInput);
 }
 
-function locationB() {
+function petstore() {
     clear();
-    print("\nYou are in location B!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+    print("\nYou are in the petstore. You will have 3 different homes to choose from.");
+    print("\nThe first house belongs to an old lady, do you want to go with her? If yes, type House1 if not, type petstore to remain here." +
+        "\n\tlocationHouse1");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
-            locationA();
+        if (input.toLowerCase() === "House1") {
+            House1();
         } else {
-            stayHere();
-            waitThenCall(locationB);
+		if(input.toLowerCase()==="petstore"){
+                 petstore();
+	}
         }
     }
     waitForInput(processInput);
@@ -49,7 +50,7 @@ function start(){
     print("Welcome to my game! Press any key to start");
 
     function processInput(input){
-            locationA();
+            Start();
     }
     waitForInput(processInput);
 }
