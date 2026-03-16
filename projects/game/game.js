@@ -6,6 +6,8 @@ let houseTwoDiscovered = false;
 let backyardDiscovered = false;
 let livingRoomDiscovered = false;
 let floorboardsDiscovered= false;
+let tunnelDiscovered = false;
+let fieldDiscovered = false;
 
 //Declare your other global variables here
 
@@ -89,10 +91,20 @@ function endWin(){
 
 function backyard(){
 backyardDiscovered = true;
-print("\nYou have made it outside and are now free!");
+print("\nYou have made it outside, should you run across the field or dig a tunnel to escape?");
+	print("\ntfield\n\ttunnel");
+
+	function processInput(input){
+		if (input.toLowerCase() === "field"){
+			print("\nYou run across the field, just as you think you've  made it a hawk swoops down and catches you.");
+			end();
+		}else if(input.toLowerCase() == "tunnel"){
+			print("\nYou dig a tunnel across the backyard. You are hidden underground and the hawk doesn't see you. You are safe.");
 	endWin();
 }
-
+}
+waitForInput(processInput);
+}
 function houseTwo(){
 	houseTwoDiscovered = true;
 	print("\nYou are now in your new house! Do you want to escape?");
