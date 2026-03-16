@@ -65,7 +65,7 @@ function end(){
 	print("\n\tyes\n\tno");
 	function processInput(input){
 		if(input.toLowerCase() === "yes"){
-			start();
+			welcome();
 		}else if (input.toLowerCase() === "no"){
 			print("\nThank you for playing!");
 			gameActive=false;
@@ -80,7 +80,7 @@ function endWin(){
 
 	function processInput(input){
 		if(input.toLowerCase() === "yes"){
-			start();
+			welcome();
 		}else if(input.toLowerCase() === "no"){
 			print("\nThank you for playing!");
 			gameActive=false;
@@ -152,7 +152,7 @@ function welcome(){
 
     function processInput(input){
 	    if(input.toLowerCase() === "hamster"){
-             petstore();
+             start();
     }
     }
     waitForInput(processInput);
