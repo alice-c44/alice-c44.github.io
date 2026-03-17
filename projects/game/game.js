@@ -139,6 +139,8 @@ function welcome(){
     function processInput(input){
 	    if(input.toLowerCase() === "hamster"){
              start();
+    }else{
+	    stayHere();
     }
     }
     waitForInput(processInput);
