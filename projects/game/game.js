@@ -1,32 +1,21 @@
 let gameActive = true; //this variable is required. 
                        //to stop the game, set it to false.
 
-let hide = false;
+let hidingSpot = false;
 //Declare your other global variables here
 
 //Make one function for each location
-function begin() {
-    clear();
-    print("\nYou're life as a hamster has begun. You must navigate obstacles and make the right choice to successfully escape and be free.");
-    print("\nType start to begin");
-	function processInput(input){
-		if(input.toLowerCase()==="start"){
-			petstore();
-    }
-	} 
-    waitForInput(processInput);
-}
 
 function petstore() {
     clear();
     print("\nYou are in the petstore. You will have 2 different homes to choose from.");
     print("\nPick a house to go to or type petstore to remain here.");
-	print("\n\thouseOne\n\thouseTwo\n\tpetstore");
+	print("\n\thouse1\n\thouse2\n\tpetstore");
     
     function processInput(input){
-        if (input.toLowerCase() === "houseOne") {
+        if (input.toLowerCase() === "house1") {
             houseOne();
-        } else if (input.toLowerCase() === "houseTwo"){
+        } else if (input.toLowerCase() === "house2"){
 		houseTwo();
 	} else if (input.toLowerCase() === "petstore"){
 		stayHere();
@@ -38,7 +27,8 @@ function petstore() {
 }
 
 function houseOne() {
-print("\nYou are in now in your new home. Do you want to escape?");
+clear();
+	print("\nYou are in now in your new home. Do you want to escape?");
 print("\n\tbackyard\n\tstay here");
 
 	function processInput(input){
@@ -81,23 +71,35 @@ function endWin(){
 }
 
 function backyard(){
+	clear();
 print("\nYou have made it outside, should you run across the field or dig a tunnel to escape?");
-	print("\ntfield\n\ttunnel");
+	print("\n\tfield\n\ttunnel");
 
 	function processInput(input){
 		if (input.toLowerCase() === "field"){
-			print("\nYou run across the field, just as you think you've  made it a hawk swoops down and catches you.");
+			field();
+		}else if (input.toLowerCase() === "tunnel"){
+			tunnel();
+		}
+	}
+		waitForInput(processInput);
+	}
+function field(){
+	clear();
+print("\nYou run across the field, just as you think you've  made it a hawk swoops down and catches you.");
 			end();
-		}else if(input.toLowerCase() == "tunnel"){
-			print("\nYou dig a tunnel across the backyard. You are hidden underground and the hawk doesn't see you. You are safe.");
+		}
+
+function tunnel(){
+	clear();
+print("\nYou dig a tunnel across the backyard. You are hidden underground and the hawk doesn't see you. You are safe.");
 	endWin();
 }
-}
-waitForInput(processInput);
-}
+
 function houseTwo(){
+	clear();
 	print("\nYou are now in your new house! Do you want to escape?");
-	print("\ntyes\n\tno");
+	print("\n\tyes\n\tno");
 
 	function processInput(input){
 		if (input.toLowerCase() === "yes"){
@@ -110,7 +112,14 @@ function houseTwo(){
 }
 
 function livingRoom(){
-	print("\nYou made into the living room, but are immedieatly faced with a problem.");
+	clear();
+	print("\nYou made it into the living room and see a crack in the floorboards. If you chew it a little you'll be able to squeeze through. Do you want to start chewing?");
+	print("\n\tyes\n\tno");
+
+	function processInput(input){
+		if (input.toLowerCase() === "yes"){
+			hidingSpot=true;
+	clear();
 	print("\nYour owner also has a dog which is now looking at you curiously. It begins walking over to you, you can either stay where you are or hid under the floorboards. What do you choose?");
 	print("\n\tstay here\n\thide");
 
@@ -123,13 +132,38 @@ function livingRoom(){
 		floorboards();
 		}
 	}
+			waitForInput(processInput);
+		}else if (input.toLowerCase() === "no"){
+			hidingSpot=false;
+			clear();
+			print("\nYour owner also has a dog which is now looking at you. It begins walking over to you, pick one of these options:");
+			print("\n\tstay here\n\thide");
+
+			function processInput(input){
+				if (input.toLowerCase() ==="stay here"){
+				clear();
+					print("\nYou were eated by the dog!");
+					end();
+				}else if (input.toLowerCase() ==="hide"){
+					clear();
+					print("\nYou ran towards the crack and began chewing. However because you hadn't widened it beforehand, you were too slow and the dog caught you.");
+					end();
+				}
+			}
+			waitForInput(processInput);
+		}
+	}
+
 	waitForInput(processInput);
 }
 function floorboards(){
-	if(hide === true){
+	clear();
+	if(hidingSpot === true){
 print("You are now under the floorboards of the house. Both the dog and your owner will never find you down here.");
 print("Congratulations! You are now free, you can freely roam and eat all the crumbs left around.");
 endWin();
+}else{
+	print("You ran to hide under the floorboards but the dog caught you and ate you :(");
 }
 waitForInput(processInput);
 }
@@ -138,13 +172,12 @@ waitForInput(processInput);
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    print("Welcome to my game! Type start to begin");
-let start = "start"
+    print("Welcome to my game! You've been born as a hamster and must navigate the world and make the right choices to escape and gain freedom. Type start to begin.");
+
     function processInput(input){
-	    if(input.toLowerCase() === "start"){
-             begin();
+	    if (input.toLowerCase() === "start"){
+             petstore();
     }
-    
+    }
     waitForInput(processInput);
-}
 }
