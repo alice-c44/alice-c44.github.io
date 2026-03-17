@@ -1,6 +1,7 @@
 let gameActive = true; //this variable is required. 
                        //to stop the game, set it to false.
 
+let hide = false;
 //Declare your other global variables here
 
 //Make one function for each location
@@ -111,37 +112,39 @@ function houseTwo(){
 function livingRoom(){
 	print("\nYou made into the living room, but are immedieatly faced with a problem.");
 	print("\nYour owner also has a dog which is now looking at you curiously. It begins walking over to you, you can either stay where you are or hid under the floorboards. What do you choose?");
-	print("\n\tstay here\n\tfloorboards");
+	print("\n\tstay here\n\thide");
 
 	function processInput(input){
 		if (input.toLowerCase() === "stay here"){
 			stayHere();
 			print("\nYou stayed and were eaten by the dog!");
 			end();
-		}else if (input.toLowerCase() === "floorboards"){
+		}else if (input.toLowerCase() === "hide"){
 		floorboards();
 		}
 	}
 	waitForInput(processInput);
 }
-function floorboards();{
+function floorboards(){
+	if(hide === true){
 print("You are now under the floorboards of the house. Both the dog and your owner will never find you down here.");
 print("Congratulations! You are now free, you can freely roam and eat all the crumbs left around.");
 endWin();
+}
+waitForInput(processInput);
 }
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    print("Welcome to my game! Type hamster to begin");
-
+    print("Welcome to my game! Type start to begin");
+let start = "start"
     function processInput(input){
-	    if(input.toLowerCase() === "hamster"){
+	    if(input.toLowerCase() === "start"){
              begin();
-    }else{
-	    stayHere();
     }
-    }
+    
     waitForInput(processInput);
+}
 }
