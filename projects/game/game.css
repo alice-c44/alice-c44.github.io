@@ -3,7 +3,7 @@ body {
     padding: 20px;
     background-color: PaleVioletRed;
     font-family: 'Courier New', monospace;
-    color: LavenderBlush;
+    color: Hotpink;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -24,7 +24,7 @@ h1{
     flex-direction: column;
     max-width: 80%;
     margin: 0 auto;
-    border: 2px solid Pink;
+    border: 2px solid hotPink;
     padding: 20px;
     background-color: MistyRose;
     overflow: hidden;
@@ -48,7 +48,7 @@ h1{
 }
 
 .prompt {
-    color: Pink;
+    color: Hotpink;
     margin-right: 10px;
     font-weight: bold;
 }
@@ -68,7 +68,7 @@ h1{
 }
 
 .ascii-art {
-    color: #HotPink;
+    color: HotPink;
     line-height: 1.2;
     font-size: 12px;
 }
