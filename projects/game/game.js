@@ -4,7 +4,7 @@ let gameActive = true; //this variable is required.
 //Declare your other global variables here
 
 //Make one function for each location
-function start() {
+function begin() {
     clear();
     print("\nYou're life as a hamster has begun. You must navigate obstacles and make the right choice to successfully escape and be free.");
     print("\nType start to begin");
@@ -55,7 +55,7 @@ function end(){
 	print("\n\tyes\n\tno");
 	function processInput(input){
 		if(input.toLowerCase() === "yes"){
-			welcome();
+			start();
 		}else if (input.toLowerCase() === "no"){
 			print("\nThank you for playing!");
 			gameActive=false;
@@ -70,7 +70,7 @@ function endWin(){
 
 	function processInput(input){
 		if(input.toLowerCase() === "yes"){
-			welcome();
+			start();
 		}else if(input.toLowerCase() === "no"){
 			print("\nThank you for playing!");
 			gameActive=false;
@@ -133,12 +133,12 @@ endWin();
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
-function welcome(){
+function start(){
     print("Welcome to my game! Type hamster to begin");
 
     function processInput(input){
 	    if(input.toLowerCase() === "hamster"){
-             start();
+             begin();
     }else{
 	    stayHere();
     }
