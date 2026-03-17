@@ -1,13 +1,5 @@
 let gameActive = true; //this variable is required. 
                        //to stop the game, set it to false.
-let petstoreDiscovered = false;
-let houseOneDiscovered = false;
-let houseTwoDiscovered = false;
-let backyardDiscovered = false;
-let livingRoomDiscovered = false;
-let floorboardsDiscovered= false;
-let tunnelDiscovered = false;
-let fieldDiscovered = false;
 
 //Declare your other global variables here
 
@@ -25,7 +17,6 @@ function start() {
 }
 
 function petstore() {
-	petstoreDiscovered = true;
     clear();
     print("\nYou are in the petstore. You will have 2 different homes to choose from.");
     print("\nPick a house to go to or type petstore to remain here.");
@@ -46,7 +37,6 @@ function petstore() {
 }
 
 function houseOne() {
-	houseOneDiscovered = true;
 print("\nYou are in now in your new home. Do you want to escape?");
 print("\n\tbackyard\n\tstay here");
 
@@ -90,7 +80,6 @@ function endWin(){
 }
 
 function backyard(){
-backyardDiscovered = true;
 print("\nYou have made it outside, should you run across the field or dig a tunnel to escape?");
 	print("\ntfield\n\ttunnel");
 
@@ -106,7 +95,6 @@ print("\nYou have made it outside, should you run across the field or dig a tunn
 waitForInput(processInput);
 }
 function houseTwo(){
-	houseTwoDiscovered = true;
 	print("\nYou are now in your new house! Do you want to escape?");
 	print("\ntyes\n\tno");
 
@@ -121,7 +109,6 @@ function houseTwo(){
 }
 
 function livingRoom(){
-	livingRoomDiscovered = true;
 	print("\nYou made into the living room, but are immedieatly faced with a problem.");
 	print("\nYour owner also has a dog which is now looking at you curiously. It begins walking over to you, you can either stay where you are or hid under the floorboards. What do you choose?");
 	print("\n\tstay here\n\tfloorboards");
@@ -138,7 +125,6 @@ function livingRoom(){
 	waitForInput(processInput);
 }
 function floorboards();{
-floorboardsDiscovered = true;
 print("You are now under the floorboards of the house. Both the dog and your owner will never find you down here.");
 print("Congratulations! You are now free, you can freely roam and eat all the crumbs left around.");
 endWin();
