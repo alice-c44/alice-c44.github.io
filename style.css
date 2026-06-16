@@ -1,0 +1,45 @@
+body{
+	margin-top: 30px;
+	font-family: serif;
+	background-color: LightPink;
+}
+
+footer{
+	position: absolute;
+	background-color: PaleVioletRed;
+	height:100px;
+	width:100vw;
+	text-align: center;
+	font-size:18px;
+}
+
+header{
+	position:absolute;
+	background-color: PaleVioletRed;
+	height:50px;
+	width:100vw;
+	text-align: right;
+	font-size: 18px;
+display:grid;
+grid:
+'labels' 60px
+/100px;
+z-index:10;
+}
+
+#labels {
+	grid-area: labels;
+	display:flex;
+	align-items: center;
+	justify-content: right;
+	gap:30px;
+	margin-right:45px;
+}
+
+#header{
+	position: absolute;
+	top:0;
+	width:0;
+	height:0;
+	background-color:transparent;
+}
